@@ -1,0 +1,69 @@
+.ppt-result-attribute-div {
+  display: flex;
+  justify-content: space-between;
+}
+.ppt-result-attribute-div > :first-child {
+  font-weight: bold;
+}
+.drawer {
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 200px;
+  bottom: 0;
+  color: #bcc0c9;
+  background-color: #30333a;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  height: 100%;
+  padding: 20 0 0 0;
+}
+.ppt-taxo-li {
+  background-color: #bcc0c9;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: black;
+  padding: 20px;
+}
+.ppt-taxo-li:hover {
+  background: rgb(81, 81, 245);
+}
+.ppt-result {
+  background-color: #bcc0c9;
+  color: #30333a;
+  margin: 20px;
+  border-radius: 20px;
+  width: 80%;
+}
+.search-input {
+  margin: 10px 10px;
+}
+.result-with-map {
+  display: flex;
+  flex-direction: row;
+  height: 1000px; 
+}
+
+#popoto-results {
+  flex: 1;
+  gap: 40px;
+}
+
+#map {
+  flex: 2;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+.b {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  padding: 10px 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

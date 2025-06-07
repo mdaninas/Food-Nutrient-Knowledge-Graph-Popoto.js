@@ -1,0 +1,12 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Jar body -->
+  <rect x="35" y="30" width="30" height="50" rx="5" ry="5" fill="#F7DC6F" stroke="#B7950B" stroke-width="2"></rect>
+
+  <!-- Jar cap -->
+  <rect x="35" y="20" width="30" height="10" fill="#85929E"></rect>
+
+  <!-- Dots (holes) -->
+  <circle cx="45" cy="25" r="1" fill="#2C3E50"></circle>
+  <circle cx="50" cy="25" r="1" fill="#2C3E50"></circle>
+  <circle cx="55" cy="25" r="1" fill="#2C3E50"></circle>
+</svg>

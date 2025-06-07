@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle -->
+  <circle cx="50" cy="50" r="40" fill="#ECF0F1" stroke="#2C3E50" stroke-width="3"></circle>
+
+  <!-- Pie slices -->
+  <path d="M50,50 L50,10 A40,40 0 0,1 90,50 Z" fill="#3498DB"></path> <!-- Carbs -->
+  <path d="M50,50 L90,50 A40,40 0 0,1 50,90 Z" fill="#E67E22"></path> <!-- Protein -->
+  <path d="M50,50 L50,90 A40,40 0 0,1 10,50 Z" fill="#2ECC71"></path> <!-- Fats -->
+
+  <!-- Center circle -->
+  <circle cx="50" cy="50" r="10" fill="#fff"></circle>
+</svg>
