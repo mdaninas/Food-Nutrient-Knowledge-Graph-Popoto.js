@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Popoto example</title>
+    <title>Popoto Chart Visual</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/popoto/dist/popoto.min.css"
@@ -15,11 +15,53 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/my.css" />
+
+    <style>
+      .mc {
+        display: flex;
+        height: 100%;
+      }
+
+      #popoto-graph {
+        flex: 2;
+      }
+
+      .chatc {
+        flex: 1;
+        padding: 20px;
+        background-color: antiquewhite;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        overflow-y: auto;
+      }
+
+      .chart-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .chart-grid canvas {
+        width: 100%;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+      }
+
+      @media (max-width: 1200px) {
+        .chart-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 700px) {
+        .chart-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
 
   <body class="ppt-body">
@@ -27,23 +69,17 @@
       <nav style="background-color: #444951">
         <div class="nav-wrapper">
           <form
-            style="
-              height: 100%;
-              padding-left: 8%;
-              padding-right: 8%;
-              background-color: #525863;
-            "
+            style="padding: 0 8%; background-color: #525863"
             onsubmit="event.preventDefault(); return false;"
           >
-            <div style="display: flex">
-              <input
-                id="search"
-                class="search-input"
-                type="search"
-                required
-                placeholder="Makanan yang seperti apa yang ingin anda cari?"
-              />
-            </div>
+            <input
+              id="search"
+              class="search-input"
+              type="search"
+              required
+              placeholder="Makanan yang seperti apa yang ingin anda cari?"
+              style="width: 100%"
+            />
           </form>
         </div>
       </nav>
@@ -51,29 +87,26 @@
 
     <section class="ppt-section-main">
       <div class="ppt-container-graph">
-        <nav id="popoto-taxonomy" class="ppt-taxo-nav drawer">
-        </nav>
-
-        <div id="popoto-graph" class="ppt-div-graph">
+        <nav id="popoto-taxonomy" class="ppt-taxo-nav drawer"></nav>
+        <div class="mc">
+          <div id="popoto-graph" class="ppt-div-graph"></div>
+          <div class="chatc">
+            <div class="chart-grid">
+              <canvas id="myChart2"></canvas>
+              <canvas id="myChart3"></canvas>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="ppt-section-header">
-
         RESULTS <span id="result-total-count" class="ppt-count"></span>
       </div>
+
       <div class="result-with-map">
-
-        <div
-          id="popoto-results"
-          class="ppt-container-results"
-        ></div>
-
-
+        <div id="popoto-results" class="ppt-container-results"></div>
         <div style="position: relative; flex: 3">
-
           <button onclick="resetView()" class="b">Reset View</button>
-
           <div id="map"></div>
         </div>
       </div>
@@ -83,10 +116,12 @@
     <script src="https://unpkg.com/neo4j-driver-lite" charset="utf-8"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     <script src="https://unpkg.com/popoto@4.0.7/dist/popoto.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/auto-complete.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/map.js"></script>
     <script src="js/koneksi.js"></script>
     <script src="js/factual.js"></script>
+    <script src="js/chart.js"></script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+Food;  Cuisine;  Category;  Cook_Time;  Ingredients;  Main_Nutrients;  estimated_prep_time_min;  types;  protein_per_100g;  carbohydrate_per_100g;  fat_per_100g;  calories_per_100g;  popularity_score;  user_rating;  is_halal_tag;  vegan_tag;Capital City;Latitude;Longitude
+Nasi Goreng;  Indonesia;  Main Course;  45.0;  Bayam|Ayam|Nasi|Seaweed;  Fiber|Iron|Vitamin A|Protein|Calcium;20;  Fat|Carbohydrate|Mineral;3;31;26;370;64;  3.8;  Halal;  Vegetarian;Yogyakarta;-7.797.068;110.370.529
+Soto Ayam;  Indonesia;  Main Course;  60.0;  Ayam|Daging|Bawang|Garam;  Fiber|Vitamin A|Vitamin C|Protein|Calcium;20;  Fat|Protein|Carbohydrate;23;31;31;495;87;  3.8;  Halal;  Non-Vegetarian;Surabaya;-7.257.472;112.752.088
+Gado-Gado;  Indonesia;  Salad;  30.0;  Tahu|Tempe|Sayur|Kacang;  Fiber|Vitamin B|Iron|Protein;15;  Fat|Carbohydrate;10;22;15;280;73;  4.0;  Halal;  Vegan;Jakarta;-6.208.763;106.845.599
+Rendang;  Indonesia;  Main Course;  120.0;  Daging|Santan|Rempah;  Protein|Iron|Zinc|Fat;30;  Fat|Protein;25;12;40;510;92;  4.6;  Halal;  Non-Vegetarian;Padang;-0,947083;100.417.181
+Bakso;  Indonesia;  Snack;  25.0;  Daging|Tepung|Bawang;  Protein|Iron|Vitamin B;15;  Protein|Carbohydrate;18;20;10;310;68;  3.9;  Halal;  Non-Vegetarian;Malang;-7.981.894;112.626.503
+Kimchi;  Korea;  Side Dish;  15.0;  Kubis|Cabai|Bawang Putih;  Fiber|Vitamin C|Probiotic;10;  Carbohydrate|Mineral;2;6;0;40;80;  4.2;  Halal;  Vegan;Seoul;37.566.536;126.977.966
+Bibimbap;  Korea;  Main Course;  40.0;  Nasi|Sayur|Telur|Daging;  Protein|Vitamin A|Iron;20;  Protein|Carbohydrate;12;28;10;390;85;  4.3;  Halal;  Non-Vegetarian;Jeonju;35.821.928;127.148.000
+Tteokbokki;  Korea;  Snack;  30.0;  Tteok|Gochujang|Bawang;  Carbohydrate|Fiber;20;  Carbohydrate|Fat;4;45;8;350;78;  4.0;  Non-Halal;  Vegan;Busan;35.179.554;129.075.642
+Samgyeopsal;  Korea;  Main Course;  60.0;  Daging Babi|Bawang|Selada;  Fat|Protein|Iron;25;  Fat|Protein;20;1;45;510;66;  3.7;  Non-Halal;  Non-Vegetarian;Incheon;37.456.256;126.705.208
+Jjajangmyeon;  Korea;  Main Course;  35.0;  Mie|Pasta Kedelai|Bawang;  Carbohydrate|Protein;20;  Carbohydrate|Fat;6;40;12;400;72;  4.1;  Halal;  Vegetarian;Daejeon;36.350.411;127.384.548
+Sushi;  Jepang;  Main Course;  50.0;  Nasi|Ikan|Rumput Laut;  Protein|Omega-3|Vitamin A;25;  Protein|Carbohydrate;16;28;5;320;95;  4.7;  Halal;  Non-Vegetarian;Tokyo;35.689.487;139.691.711
+Tempura;  Jepang;  Snack;  30.0;  Udang|Tepung|Sayur;  Protein|Fat;15;  Fat|Protein;13;20;18;370;78;  4.0;  Non-Halal;  Non-Vegetarian;Osaka;34.693.738;135.502.165
+Ramen;  Jepang;  Main Course;  40.0;  Mie|Kaldu|Daging;  Protein|Carbohydrate|Sodium;20;  Carbohydrate|Fat;8;42;15;410;84;  4.3;  Halal;  Non-Vegetarian;Fukuoka;33.590.355;130.401.716
+Onigiri;  Jepang;  Snack;  20.0;  Nasi|Rumput Laut|Tuna;  Carbohydrate|Protein;10;  Carbohydrate|Mineral;6;30;4;250;70;  3.9;  Halal;  Non-Vegetarian;Niigata;37.916.192;139.036.412
+Miso Soup;  Jepang;  Side Dish;  15.0;  Miso|Rumput Laut|Tofu;  Protein|Mineral;10;  Mineral|Protein;4;10;3;110;65;  3.8;  Halal;  Vegetarian;Nagoya;35.181.446;136.906.398
+Burger;  Amerika;  Main Course;  25.0;  Roti|Daging|Keju|Sayur;  Protein|Fat|Iron;10;  Fat|Carbohydrate;18;28;20;520;85;  4.2;  Non-Halal;  Non-Vegetarian;New York;40.712.776;-74.005.974
+Hotdog;  Amerika;  Snack;  20.0;  Sosis|Roti|Saus;  Protein|Fat|Sodium;10;  Protein|Fat;10;26;18;450;75;  4.0;  Non-Halal;  Non-Vegetarian;Chicago;41.878.113;-87.629.799
+Caesar Salad;  Amerika;  Salad;  15.0;  Selada|Keju|Crouton;  Fiber|Fat|Protein;10;  Fat|Mineral;6;10;15;200;70;  4.1;  Halal;  Vegetarian;Los Angeles;34.052.235;-118.243.683
+Mac and Cheese;  Amerika;  Main Course;  35.0;  Pasta|Keju|Susu;  Carbohydrate|Fat;15;  Carbohydrate|Fat;8;38;20;430;78;  3.9;  Halal;  Vegetarian;Atlanta;33.748.997;-84.387.985
+Fried Chicken;  Amerika;  Main Course;  45.0;  Ayam|Tepung|Rempah;  Protein|Fat;20;  Fat|Protein;22;12;30;480;90;  4.5;  Halal;  Non-Vegetarian;Louisville;38.252.665;-85.758.456
+Pizza Margherita;  Italia;  Main Course;  30.0;  Tepung|Keju|Tomat;  Carbohydrate|Fat;20;  Carbohydrate|Fat;9;35;15;380;88;  4.4;  Halal;  Vegetarian;Naples;40.851.798;14.268.120
+Spaghetti Carbonara;  Italia;  Main Course;  40.0;  Pasta|Telur|Keju|Daging;  Protein|Fat;25;  Carbohydrate|Fat;11;38;20;460;84;  4.2;  Non-Halal;  Non-Vegetarian;Rome;41.902.782;12.496.366
+Lasagna;  Italia;  Main Course;  60.0;  Pasta|Daging|Keju;  Protein|Fat;30;  Fat|Carbohydrate;14;30;25;490;85;  4.3;  Non-Halal;  Non-Vegetarian;Bologna;44.494.888;11.342.616
+Risotto;  Italia;  Main Course;  35.0;  Beras Arborio|Kaldu|Keju;  Carbohydrate|Mineral;20;  Carbohydrate|Fat;7;32;14;360;80;  4.0;  Halal;  Vegetarian;Milan;45.464.664;9.188.540
+Tiramisu;  Italia;  Dessert;  25.0;  Keju|Kopi|Biskuit;  Fat|Carbohydrate;15;  Carbohydrate|Fat;6;36;18;400;82;  4.1;  Halal;  Vegetarian;Venice;45.440.847;12.315.515
+Pelmeni;  Rusia;  Main Course;  50.0;  Daging|Tepung|Rempah;  Protein|Carbohydrate;30;  Protein|Carbohydrate;16;30;18;430;70;  4.0;  Halal;  Non-Vegetarian;Novosibirsk;55.008.353;82.935.733
+Borscht;  Rusia;  Soup;  45.0;  Bit|Kubis|Daging;  Fiber|Iron|Vitamin C;25;  Carbohydrate|Mineral;5;22;7;260;72;  3.9;  Halal;  Non-Vegetarian;Moscow;55.755.825;37.617.298
+Olivier Salad;  Rusia;  Salad;  20.0;  Kentang|Wortel|Mayones;  Carbohydrate|Fat;15;  Carbohydrate|Fat;4;18;12;290;68;  3.7;  Halal;  Vegetarian;St. Petersburg;59.931.058;30.360.910
+Blini;  Rusia;  Snack;  30.0;  Tepung|Telur|Krim;  Carbohydrate|Protein;20;  Carbohydrate|Fat;6;26;14;310;66;  3.6;  Halal;  Vegetarian;Kazan;55.830.433;49.066.082
+Shashlik;  Rusia;  Main Course;  60.0;  Daging|Bawang|Rempah;  Protein|Fat;30;  Protein|Fat;22;4;30;470;74;  4.2;  Halal;  Non-Vegetarian;Sochi;43.585.472;39.723.098

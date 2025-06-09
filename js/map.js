@@ -1,4 +1,3 @@
-// This will let you use the .remove() function later on
 if (!("remove" in Element.prototype)) {
   Element.prototype.remove = function () {
     if (this.parentNode) {
@@ -23,7 +22,6 @@ function flyToResult(result) {
 
 function createPopUp(currentFeature) {
   var popUps = document.getElementsByClassName("mapboxgl-popup");
-  // Check if there is already a popup on the map and if so, remove it
   if (popUps[0]) popUps[0].remove();
 
   var popup = new mapboxgl.Popup({ closeOnClick: false })
@@ -38,7 +36,6 @@ function createPopUp(currentFeature) {
 }
 
 function computeBounds(geojson) {
-  // Geographic coordinates of the LineString
   var coordinates = geojson.features.map(function (feature) {
     return feature.geometry.coordinates;
   });

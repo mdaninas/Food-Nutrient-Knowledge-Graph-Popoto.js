@@ -1,0 +1,56 @@
+LOAD CSV WITH HEADERS FROM "http://localhost/resep/Cihuy2_clean.csv" AS row
+FIELDTERMINATOR ';'
+
+WITH row
+WHERE row.Food IS NOT NULL AND trim(row.Food) <> ""
+
+WITH row,
+     split(row.`  Ingredients`, '|') AS ingredients,
+     split(row.`  Main_Nutrients`, '|') AS nutrients,
+     split(row.`  types`, '|') AS types
+
+MERGE (f:Food {name: trim(row.Food)})
+SET f.cook_time = toFloat(row.`  Cook_Time`),
+    f.protein = toFloat(row.`  protein_per_100g`),
+    f.carb = toFloat(row.`  carbohydrate_per_100g`),
+    f.fat = toFloat(row.`  fat_per_100g`),
+    f.calories = toFloat(row.`  calories_per_100g`),
+    f.popularity = toInteger(row.`  popularity_score`),
+    f.rating = toFloat(row.`  user_rating`),
+    f.capital = trim(row.`Capital City`),
+    f.latitude = trim(row.Latitude),
+    f.longitude = trim(row.Longitude)
+
+// Ingredients
+FOREACH (ingredient IN ingredients |
+  MERGE (i:Ingredient {name: trim(ingredient)})
+  MERGE (f)-[:HAS_INGREDIENT]->(i)
+)
+
+// Nutrients
+FOREACH (nutrient IN nutrients |
+  MERGE (n:Nutrient {name: trim(nutrient)})
+  MERGE (f)-[:CONTAINS]->(n)
+)
+
+// Types
+FOREACH (t IN types |
+  MERGE (tp:Type {name: trim(t)})
+  MERGE (f)-[:HAS_TYPE]->(tp)
+)
+
+// Cuisine
+MERGE (c:Cuisine {name: trim(row.`  Cuisine`)})
+MERGE (f)-[:BELONGS_TO_CUISINE]->(c)
+
+// Category
+MERGE (cat:Category {name: trim(row.`  Category`)})
+MERGE (f)-[:HAS_CATEGORY]->(cat)
+
+// Halal status
+MERGE (h:HalalStatus {name: trim(row.`  is_halal_tag`)})
+MERGE (f)-[:IS_HALAL_STATUS]->(h)
+
+// Vegan status
+MERGE (v:VeganStatus {name: trim(row.`  vegan_tag`)})
+MERGE (f)-[:IS_VEGAN_STATUS]->(v)
